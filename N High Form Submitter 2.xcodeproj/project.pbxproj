@@ -86,7 +86,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		449CC8904199D3303BF414A6 /* check.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = check.png; path = ../ExtensionSource/check.png; sourceTree = "<group>"; };
+		449CC8904199D3303BF414A6 /* check.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = check.png; path = ExtensionSource/check.png; sourceTree = "<group>"; };
 		91AF602A3070FDF1004E50C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
 		91AF602B3070FDF1004E50C5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		91AF602C3070FDF1004E50C5 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
@@ -108,12 +108,12 @@
 		91AF60593070FDF1004E50C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91AF605E3070FDF1004E50C5 /* N High Form Submitter 2 Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "N High Form Submitter 2 Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91AF60633070FDF1004E50C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91AF60833070FDF2004E50C5 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../ExtensionSource/popup.js; sourceTree = "<group>"; };
-		91AF60843070FDF2004E50C5 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../ExtensionSource/popup.html; sourceTree = "<group>"; };
-		91AF60853070FDF2004E50C5 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../ExtensionSource/manifest.json; sourceTree = "<group>"; };
-		91AF60863070FDF2004E50C5 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../../ExtensionSource/content.js; sourceTree = "<group>"; };
-		E255E5A95B5DC992A44790C7 /* images */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = images; path = ../ExtensionSource/images; sourceTree = "<group>"; };
-		ECFABD1069E1A7EB8E592EAD /* check.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = check.png; path = ../../ExtensionSource/check.png; sourceTree = "<group>"; };
+		91AF60833070FDF2004E50C5 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../ExtensionSource/popup.js; sourceTree = "<group>"; };
+		91AF60843070FDF2004E50C5 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../ExtensionSource/popup.html; sourceTree = "<group>"; };
+		91AF60853070FDF2004E50C5 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../ExtensionSource/manifest.json; sourceTree = "<group>"; };
+		91AF60863070FDF2004E50C5 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = ../ExtensionSource/content.js; sourceTree = "<group>"; };
+		E255E5A95B5DC992A44790C7 /* images */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = images; path = ExtensionSource/images; sourceTree = "<group>"; };
+		ECFABD1069E1A7EB8E592EAD /* check.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = check.png; path = ../ExtensionSource/check.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
