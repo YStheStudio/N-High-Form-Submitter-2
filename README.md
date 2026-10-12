@@ -31,7 +31,7 @@ N高等学校・S高等学校等のGoogleフォーム（出席フォーム）へ
 
 配布されている `.dmg` ファイルを使用してインストールする場合の手順です。
 
-1. 配布された `.dmg` ファイルをダブルクリックして開きます。
+1. [リリース](https://github.com/YStheStudio/N-High-Form-Submitter-2/releases)からダウンロードした `.dmg` ファイルをダブルクリックして開きます。
 2. 表示されたウィンドウで **`N High Form Submitter 2.app`** を **`Applications`（アプリケーション）** フォルダへドラッグ＆ドロップしてコピーします。
 3. アプリケーションフォルダから **`N High Form Submitter 2.app`** を起動します。
    > **初回起動時に「開発元が未確認のため開けません」等の警告が出る場合**
@@ -57,7 +57,7 @@ N高等学校・S高等学校等のGoogleフォーム（出席フォーム）へ
 
 1. Macに **Xcode** がインストールされていることを確認します（Mac App Store等から入手可能）。
 2. プロジェクトを開きます：
-   `N High Form Submitter/N High Form Submitter 2.xcodeproj` をダブルクリックしてXcodeで開きます。
+   [リリース](https://github.com/YStheStudio/N-High-Form-Submitter-2/releases)からダウンロードしたソースコードのフォルダ内の`N High Form Submitter 2.xcodeproj` をダブルクリックしてXcodeで開く、またはレポジトリのリンクからクローンします。
 3. Apple ID（開発者アカウント / 無料の通常Apple IDで可）の登録：
    - Xcodeメニューバー **「Xcode」→「Settings...」**（または `Preferences...`）→ **「Accounts」** タブを開きます。
    - 右下の **「Sign In...」** ボタンをクリックして、ご自身のApple IDを追加します。
