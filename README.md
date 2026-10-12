@@ -1,6 +1,6 @@
 # N High Form Submitter 2
 
-N高等学校・S高等学校等のGoogleフォーム（出席フォーム）への自動入力を支援するSafari Web拡張機能です。macOSおよびiOS（iPhone / iPad）のSafariに対応しています。
+N高グループ等のGoogleフォーム（出席フォーム）への自動入力を支援するSafari Web拡張機能です。macOSおよびiOS（iPhone / iPad）のSafariに対応しています。
 
 ---
 
