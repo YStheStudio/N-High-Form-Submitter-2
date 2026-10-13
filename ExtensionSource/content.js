@@ -1,10 +1,53 @@
 let hasAutofilledEmail = false;
 let hasAutofilledName = false;
 
+function hasKadokawaDwangoTextOutsideForm() {
+    if (!document.body) return false;
+
+    const walker = document.createTreeWalker(
+        document.body,
+        NodeFilter.SHOW_TEXT,
+        {
+            acceptNode: (node) => {
+                const parent = node.parentElement;
+                if (!parent) return NodeFilter.FILTER_REJECT;
+                // Exclude any node within a <form> element
+                if (parent.closest('form')) {
+                    return NodeFilter.FILTER_REJECT;
+                }
+                // Exclude extension's own status box
+                if (parent.closest('#n-high-form-status')) {
+                    return NodeFilter.FILTER_REJECT;
+                }
+                // Exclude script, style, noscript tags
+                const tag = parent.tagName.toLowerCase();
+                if (tag === 'script' || tag === 'style' || tag === 'noscript') {
+                    return NodeFilter.FILTER_REJECT;
+                }
+                return NodeFilter.FILTER_ACCEPT;
+            }
+        }
+    );
+
+    let textWithSpaces = "";
+    let textRaw = "";
+    while (walker.nextNode()) {
+        textWithSpaces += " " + walker.currentNode.nodeValue;
+        textRaw += walker.currentNode.nodeValue;
+    }
+
+    const pattern = /学校法人[\s\u00A0　]*角川ドワンゴ学園/;
+    return pattern.test(textWithSpaces) || pattern.test(textRaw);
+}
+
 function autofill(force = false) {
     const titleHeading = document.querySelector('div[role="heading"][aria-level="1"]') || document.querySelector('.freebirdFormviewerViewHeaderTitle');
     const titleText = titleHeading ? titleHeading.textContent : document.title;
     if (!titleText.includes("出席フォーム")) {
+        return;
+    }
+
+    if (!hasKadokawaDwangoTextOutsideForm()) {
         return;
     }
 
