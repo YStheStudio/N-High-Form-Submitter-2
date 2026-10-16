@@ -24,22 +24,25 @@ N高グループ等のGoogleフォーム（出席フォーム）への自動入�
 - **出席フォームの自動検出**: Googleフォーム（タイトルに「出席フォーム」が含まれ、`<form>`タグの外に「学校法人 角川ドワンゴ学園」の文字列を含むフォーム）を検出し、設定済みの氏名を自動入力します。
 - **自動送信対応**: 「自動入力後、すぐに送信する」オプションにより、送信ボタンの自動クリックも可能です。
 - **かんたん設定**: ツールバーのポップアップから氏名の変更や自動送信の切り替えがいつでも行えます。
-- **マルチプラットフォーム**: Google Chrome、macOS Safari、iOS Safari に対応しています。
+- **マルチプラットフォーム**: Google Chrome、Chromiumベースのブラウザ、macOS Safari、iOS Safari に対応しています。
 
 ---
 
-## 2. Google Chrome へのインストール手順
+## 2. Google Chrome / Chromiumベースのブラウザへのインストール手順
 
-Google Chrome で本拡張機能（パッケージ未登録版 / ソースコード版）を読み込んで使用する手順です。
+配布されている `.zip` ファイルを解凍して、Google Chrome / Chromiumベースのブラウザで本拡張機能（パッケージ未登録版）を読み込んで使用する手順です。
 
-1. 本リポジトリをダウンロード（またはクローン）し、`Chrome` フォルダを用意します。
-2. Google Chrome を起動し、アドレスバーに `chrome://extensions` と入力して拡張機能管理ページを開きます。
-3. 画面右上にある **「デベロッパー モード」** のトグルスイッチをオンにします。
-4. 画面左上に表示される **「パッケージ化されていない拡張機能を読み込む」**（Load unpacked）ボタンをクリックします。
-5. ファイル選択ダイアログで、本プロジェクト内の **`Chrome`** フォルダを選択して開きます。
-6. 拡張機能一覧に **「N High Form Submitter 2」** が追加されます。
-7. ツールバー右上の拡張機能アイコン（パズルピースのマーク）をクリックし、「N High Form Submitter 2」のピン留めアイコンをクリックすると、ツールバーに固定されて便利です。
-8. アイコンをクリックして氏名等の初期設定を行ってください。
+1. [N High Form Submitter 2 Chrome.zip](https://github.com/YStheStudio/N-High-Form-Submitter-2/releases/download/v2.0/N_High_Form_Submitter_2_Chrome.zip) をダウンロードします。
+2. ダウンロードしたファイルを解凍して出てきたフォルダ内の `Chrome` フォルダを用意します。
+3. Google Chrome / Chromiumベースのブラウザ を起動し、アドレスバーに `chrome://extensions` と入力して拡張機能管理ページを開きます。
+   > Chromiumベースのブラウザでは `chrome` を `edge` など適宜置き換えてください。
+4. 画面右上にある **「デベロッパー モード」** のトグルスイッチをオンにします。
+5. 画面左上に表示される **「パッケージ化されていない拡張機能を読み込む」**（Load unpacked）ボタンをクリックします。
+6. ファイル選択ダイアログで、用意した **`Chrome`** フォルダを選択して開きます。
+7. 拡張機能一覧に **「N High Form Submitter 2」** が追加されます。
+8. ツールバー右上の拡張機能アイコン（パズルピースのマーク）をクリックし、「N High Form Submitter 2」のピン留めアイコンをクリックすると、ツールバーに固定されて便利です。
+9. アイコンをクリックして氏名等の初期設定を行ってください。
+   > 示されているボタン、アイコン、トグルスイッチの位置はGoogle Chromeでの位置です。各ブラウザごとに異なります。
 
 ---
 
@@ -47,8 +50,8 @@ Google Chrome で本拡張機能（パッケージ未登録版 / ソースコー
 
 配布されている `.dmg` ファイルを使用してインストールする場合の手順です。
 
-1. [リリース](https://github.com/YStheStudio/N-High-Form-Submitter-2/releases)からダウンロードした `.dmg` ファイルをダブルクリックして開きます。
-2. 表示されたウィンドウで **`N High Form Submitter 2.app`** を **`Applications`（アプリケーション）** フォルダへドラッグ＆ドロップしてコピーします。
+1. [N High Form Submitter 2 Safari.dmg](https://github.com/YStheStudio/N-High-Form-Submitter-2/releases/download/v2.0/N_High_Form_Submitter_2_Safari.dmg) をダウンロードします。
+2. ダウンロードしたファイルを開き、表示されたウィンドウ内の **`N High Form Submitter 2.app`** を **`Applications`（アプリケーション）** フォルダへドラッグ＆ドロップしてコピーします。
 3. アプリケーションフォルダから **`N High Form Submitter 2.app`** を起動します。
    > **初回起動時に「開発元が未確認のため開けません」等の警告が出る場合**
    > - Finderでアプリアイコンを **右クリック（またはControlキーを押しながらクリック） →「開く」** を選択し、ダイアログで「開く」をクリックしてください。
@@ -71,9 +74,9 @@ Google Chrome で本拡張機能（パッケージ未登録版 / ソースコー
 
 ### 4-1. 事前準備（Xcode・署名設定）
 
-1. Macに **Xcode** がインストールされていることを確認します（Mac App Store等から入手可能）。
+1. Macに **Xcode** がインストールされていることを確認します（[Mac App Store](https://apps.apple.com/jp/app/xcode/id497799835?l=en-US&mt=12) から入手可能）。
 2. プロジェクトを開きます：
-   `Safari/N High Form Submitter 2.xcodeproj` をダブルクリックしてXcodeで開きます。
+   - [リリース](https://github.com/YStheStudio/N-High-Form-Submitter-2/releases/)からソースコードをダウンロードし、`Safari/N High Form Submitter 2.xcodeproj` をダブルクリックしてXcodeで開きます。
 3. Apple ID（開発者アカウント / 無料の通常Apple IDで可）の登録：
    - Xcodeメニューバー **「Xcode」→「Settings...」**（または `Preferences...`）→ **「Accounts」** タブを開きます。
    - 右下の **「Sign In...」** ボタンをクリックして、ご自身のApple IDを追加します。
