@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>N High Form Submitter 2 Settings</title>
+    <style>
+        body {
+            min-width: 250px;
+            width: auto;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            padding: 16px;
+            margin: 0;
+            background-color: #FFF;
+        }
+
+        h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+        }
+
+        label {
+            font-size: 13px;
+            color: #000;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        textarea#nameInput {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+            border-radius: 1px;
+            border: 1px solid #CFCFCF;
+            font-size: 14px;
+            background-color: #FFFFFF;
+            resize: vertical;
+            min-height: 42px;
+            font-family: inherit;
+        }
+
+        textarea#nameInput::placeholder {
+            color: #CFCFCF;
+        }
+
+        textarea#nameInput:focus {
+            outline: none;
+            border: 1px solid #3375CC;
+            box-shadow: 0 0 0 1.5px #3375CC;
+            border-radius: 2px;
+        }
+
+        button {
+            margin-top: 12px;
+            width: 100%;
+            padding: 10px;
+            background-color: #FFFFFF;
+            color: #3375CC;
+            border: 1px solid #3375CC;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #4298ff;
+            color: white;
+            border: 1px solid #4298ff;
+        }
+
+        button:disabled,
+        button:disabled:hover {
+            color: #ADC8EA;
+            border: 1px solid #ADC8EA;
+            background-color: #FFFFFF;
+            cursor: default;
+        }
+
+        .status {
+            font-size: 12px;
+            color: #000;
+            background-color: #FEFAC3;
+            border: 1px solid #E9E9E9;
+            border-radius: 0;
+            padding: 8px;
+            text-align: left;
+            display: none;
+        }
+
+        .settings-box {
+            background-color: #FFFFFF;
+            border: 3px solid #E9E9E9;
+            padding: 12px;
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .input-wrapper {
+            position: relative;
+            margin-bottom: 12px;
+        }
+
+        .input-wrapper textarea#nameInput {
+            margin-bottom: 0;
+            display: block;
+        }
+
+        .char-counter {
+            position: absolute;
+            bottom: -12px;
+            right: 16px;
+            background-color: #FFFFFF;
+            border: 2px solid #9A9A9A;
+            border-radius: 4px;
+            padding: 4px 6px;
+            font-size: 10px;
+            color: #333;
+            display: none;
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        #saveCheckIcon {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            width: 24px;
+            height: 24px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>N High Form Submitter 2</h3>
+    <div class="settings-box">
+        <img id="saveCheckIcon" src="check.png" alt="Saved">
+        <label for="nameInput">氏名（例：N高S太郎）:</label>
+        <div class="input-wrapper">
+            <textarea id="nameInput" placeholder="入力しよう" rows="1"></textarea>
+            <div id="charCounter" class="char-counter">0文字</div>
+        </div>
+
+        <label class="toggle-container"
+            style="display: flex; align-items: center; cursor: pointer; margin-bottom: 0; font-weight: normal; font-size: 13px; color: #444;">
+            <input type="checkbox" id="autoSubmitCheck" style="margin-right: 8px;">
+            自動入力後、すぐに送信する
+        </label>
+    </div>
+
+    <div id="status" class="status">設定を保存しました。</div>
+    <button id="saveBtn">設定を保存</button>
+    <script src="popup.js"></script>
+</body>
+
+</html>
